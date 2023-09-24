@@ -37,3 +37,10 @@ jobs:
     steps:
       - name: Print Python version
         run: python -V
+
+  third_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Dunder_mro file
+        run: python Dunder_mro.py "Antonio", 30, "male", "11/06/1993", "pilot", 30000
+
