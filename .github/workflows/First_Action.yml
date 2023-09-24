@@ -1,6 +1,9 @@
 #Author: GVR.
 #Project: GitHub Actions Course.
 #Practice: 01.
+#Descripton:
+### This file contains all the instructions to:
+###   - Execute some bash commands in ubuntu shell.
 
 
 
@@ -29,3 +32,8 @@ jobs:
       - name: Print goodbye
         run: echo "Done and bye"
 
+  second_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Python version
+        run: python -V
