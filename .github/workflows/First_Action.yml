@@ -21,6 +21,11 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Yeah I know... Another Hello World"
+      - name: Print multiple lines
+        run: |
+          echo "- Object 1"
+          echo "- Object 2"
+          echo "- Object 3"
       - name: Print goodbye
         run: echo "Done and bye"
 
