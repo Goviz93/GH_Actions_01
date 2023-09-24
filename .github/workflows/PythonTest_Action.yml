@@ -1,0 +1,38 @@
+#Author: GVR.
+#Project: GitHub Actions Course.
+#Practice: 02.
+#Descripton:
+### This file contains all the instructions to:
+###   - Execute the python -v command to ensure python version is installed.
+###   - Execute a python script providing 6 input parameters.
+
+
+
+#Workflow name.
+name: Python Test
+
+#Define the trigger to this workflow.
+on: [push, workflow_dispatch]
+
+
+#Jobs
+jobs:
+  Python_Vaidation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Python version
+        run: python -V
+
+
+  Script_Tester:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: .
+
+      - name: Execute Dunder_mro file
+        run: python Dunder_mro.py "Antonio", 30, "male", "11/06/1993", "pilot", 30000
+
+
