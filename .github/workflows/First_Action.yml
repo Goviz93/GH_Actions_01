@@ -17,7 +17,7 @@ on: workflow_dispatch
     #Define the steps.
 jobs:
   first_job: 
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print greeting
         run: echo "Yeah I know... Another Hello World"
