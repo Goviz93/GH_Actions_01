@@ -1,0 +1,26 @@
+#Author: GVR.
+#Project: GitHub Actions Course.
+#Practice: 01.
+
+
+
+#Workflow name.
+name: First Workflow
+
+#Define the trigger to this workflow.
+on: workflow_dispatch
+
+
+#Define the jobs to perform.
+  #Define the job.
+    #Define the OS.
+    #Define the steps.
+jobs:
+  first_job: 
+    runs_on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Yeah I know... Another Hello World"
+      - name: Print goodbye
+        run: echo "Done and bye"
+
