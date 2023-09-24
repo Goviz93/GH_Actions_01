@@ -17,7 +17,6 @@ on: [push, workflow_dispatch]
 
 #Jobs
 jobs:
-  Py_Val:
   Python_Vaidation:
     runs-on: ubuntu-latest
     steps:
@@ -26,7 +25,7 @@ jobs:
 
 
   Script_Tester:
-    needs: Py_Val
+    needs: Python_Vaidation
     runs-on: ubuntu-latest
     steps:
       - name: Get code
